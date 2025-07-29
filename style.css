@@ -1,0 +1,754 @@
+@import url();
+
+@media screen and (max-width: 768px) {
+    .vehicles-models, .our-models, .ends-project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vehicles-model, .our-model, .end0-project, .end1-project, .end2-project {
+        width: 95%;
+    }
+
+    .so-madie {
+        padding: 10px;
+    }
+
+    .links img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+}
+
+
+@media (max-width: 711px) and (max-width:769px){
+    header {
+        background-size: cover; /* إذا كنت تريد أن تملأ الصورة الشاشة */
+        background-position: top center;
+    }
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f1f1f1;
+  --secondary-color: #fbfbfb;
+  --dark-gray: #333;
+  --light-brown: #c7a17c;
+  --black: #1f2226;
+  --brown:#623615;
+  --gray:#d4cfcf;
+}
+
+body {
+  font-family: "Open Sans" , serif;
+  
+}
+
+p {
+  font-family: "Open Sans", serif;
+  color: var(--dark-gray);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+
+
+
+/* Header start */
+#header {
+  position: fixed;
+  background-color: var(--secondary-color);
+  width: 100%;
+  border-bottom: 1px solid var(--gray);
+  
+}
+
+
+#header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 55px;
+  max-width: 100%;
+  height: 7vh;
+}
+
+#header .navbar .logo-container {
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#header .navbar .logo-container img {
+  width: 15%;
+  height: auto;
+}
+
+#header .navbar .logo-container .logo-text{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--brown);
+    text-transform: uppercase;
+}
+
+
+#header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#header .navbar ul li a {
+  color: var(--dark-gray);
+  font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    margin: 0 15px;
+    
+}
+
+#header .navbar ul li a:hover {
+ color: var(--light-brown);
+}
+
+/*header  end*/
+
+
+
+/* home start */
+
+#home {
+  background-image: url('./image coffe/home-pn.png');
+  background-size: cover;
+  background-size: 100%;
+  background-color:#f1f1f1;
+}
+
+
+#home .background:haver {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(158, 155, 155, 0.5);
+}
+#home .container{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+
+#home  .home-content {
+  display: flex ;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
+  align-items:center;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+#home   .home-content  .content-text h3{
+   font-size: 24px;
+  font-weight: 500;
+  color: var(--dark-gray);
+  margin: 10px;
+  margin-left: -14rem;
+}
+
+#home  .home-content  .content-text h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin-left: 70px;
+  line-height: 1.2;
+
+
+}
+
+#home  .container .home-content  .content-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  margin-left: 75px;
+  max-width: 100%;
+}
+
+#home .home-content .content-text  .btn {
+   display: inline-block;
+    margin-top: 40px;
+    margin-left: 70px;
+    padding: 15px 30px;
+    background-color: var(--light-brown);
+    color: var(--secondary-color);
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none; /* لو كان الزر <a> */
+    align-self: flex-start; /* يضمن محاذاته مع بداية النص */ 
+}
+
+
+#home .home-content .content-text  .btn:hover {
+    background-color: var(--dark-gray);
+    color: var(--secondary-color);
+}
+
+#home .home-content .content-text  .btn i {
+    margin-left: 10px;
+
+}
+
+
+#home .home-content .content-text  img{
+  display: block;
+    width: 100%;
+    max-width:500%;
+}
+/* Home end*/
+
+
+
+/* About start */
+#about {
+  background-color: var(--secondary-color);
+  padding: 80px 50px;
+}
+
+
+#about .container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+
+#about .about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  background-color: var(--light-brown);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0);
+  margin: 20px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 25px;
+
+}
+
+#about .about-content h2 ,h3{
+ font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left:-3rem;
+  text-transform: uppercase;
+}
+
+
+#about .about-content h2 .text-primary  {
+  color: var(--primary-color);
+  font-size: 20px;
+ /* font-weight: bold;*/
+}
+
+
+#about .about-content p{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400px;
+  color: var(--dark-brown);
+  text-align: left;
+
+}
+#about .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#about .row .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+ /* width: 100%; خلي بالك ممكن نرجع تاني */
+  margin: 0 20px;
+}
+
+#about .about-content h3{
+
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: -15rem;
+
+}
+
+/* About end */
+
+
+
+/*menu start*/
+#menu {
+  background-color: #f3f1f1;
+  padding: 50px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#menu .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#menu .heading h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+#menu .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+#menu .col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#menu .item {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+#menu .item img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+#menu .item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+#menu .item p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: -50px;
+  margin-left: 10px;
+  max-width: 100%;
+  text-align: left;
+}
+
+#menu .item .price {
+  margin-left: auto;
+  margin-top: -30px;
+
+}
+
+#menu .item .price p {
+  background-color: #b98e65;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* تأثير hover على كل item داخل col */
+#menu .item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: backgroung-color  0.3s ease, transform 0.3s ease;
+}
+
+/* تأثير hover على السعر */
+#menu .item .price p:hover {
+  background-color:#333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: scale(1.1);
+  border: 1px solid #383430;
+}
+
+/*menu end*/
+
+/*Test Imonials start*/
+#testimonials {
+  background-color: #fff;
+  padding: 50px 50px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+#testimonials .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#testimonials .heading h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+  margin: 80px;
+  text-transform: uppercase;
+}
+
+#testimonials .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  gap: 20px;
+}
+
+#testimonials .col {
+  display: block;
+  flex-direction: column;
+  gap: 70px;
+}
+
+#testimonials .testimonial {
+  background-color:#d4cfcf;
+  padding: 80px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#testimonials .testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  margin-top: -150px;
+  object-fit: cover;
+
+}
+
+#testimonials .testimonial h4 {
+  font-size: 25px;
+  color: #222;
+  font-weight: 600;
+  margin: 5px;
+}
+
+#testimonials .testimonial p {
+  font-size: 16px;
+  color: #1f2226;
+  margin-bottom: 20px;
+}
+
+
+
+/*contact start*/
+#contact {
+  padding: 100px 0;
+  background-color: #f3f1f1;
+}
+
+
+#contact .container h2 {
+  font-size: 40px;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: -10px;
+  text-align: center;
+}
+
+
+#contact .row {
+ display:grid;
+ grid-template-columns : repeat(2, 1fr);
+ margin-top: 2rem;
+}
+
+#contact .row .contact-info{
+  background-color:#fbfbfb;
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+ /* margin-left: 50rem;*/
+  margin-right: 20px;
+}
+
+#contact .row .contact-info h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+}
+
+#contact .row  .contact-info form input, 
+#contact .row  .contact-info form textarea{
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+
+#contact .row  .contact-info form button.btn-submit{
+  display: block;
+  background-color: var(--black);
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%; /* أو قيمة أكبر حسب التصميم */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+#contact .row  .contact-info form button.btn-submit:hover{
+  background-color: var(--light-brown);
+  color: #fdfdfd;
+  transition: backgroung-color  0.3s ease, transform 0.3s ease;
+}
+
+#contact  .map iframe{
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-left: 100px;
+}
+
+/*conect end*/
+
+
+
+/*footer start*/
+
+/* ضروري علشان الخلفية تشتغل */
+#footer {
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  background-color: #c7a17c;
+
+}
+
+/* الطبقة الرمادية */
+#footer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(139, 131, 131, 0); /* شفاف */
+  z-index: 1;
+  pointer-events: none; /* مهم علشان اللينكات تفضل شغالة */
+  transition: background-color 0.3s ease;
+}
+
+/* عند مرور الماوس على الفوتر */
+#footer:hover .overlay {
+ background-color: rgba(128, 128, 128, 0.3); /* رمادي شفاف */
+}
+
+/* محتوى الفوتر لازم يكون فوق الطبقة */
+#footer .footer-top,
+#footer .all {
+  position: relative;
+  z-index: 2;
+}
+
+
+#footer .footer-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#footer .footer-top .container .row {
+  display: flex;
+  
+}
+
+#footer .footer-top .container .row .col{
+  margin-left:15px;
+}
+
+
+#footer .footer-top .container .row .col h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--dark-brown);
+  margin-bottom: 20px;
+  margin-right: 7rem;
+  text-decoration: underline;
+}
+
+#footer .footer-top .container .row .col p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+#footer .footer-top .container .row .col ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+#footer .footer-top .container .row .col ul li i {
+  
+  font-size: 15px;
+  color: var(--dark-brown);
+  margin-right: 1rem;
+}
+
+
+#footer .footer-top .container .row .col2{
+  margin-left:5rem;
+}
+
+
+#footer .footer-top .container .row .col2 h3 {
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+  color: var(--dark-brown);
+  margin-bottom: 20px;
+  margin-right: 30rem;
+  text-decoration: underline;
+}
+
+
+#footer .footer-top .container .row .col2 ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  line-height: 1.5;
+  margin-left: 145px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+#footer .footer-top .container .row .col3{
+  margin-left:25px;
+}
+
+
+#footer .footer-top .container .row .col3 h3 {
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+  color: var(--dark-brown);
+  margin-bottom: 20px;
+  margin-right: 15rem;
+  text-decoration: underline;
+}
+
+
+
+#footer .footer-top .container .row .col3 ul {
+  list-style: none;
+  padding: 5px;
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+#footer .footer-top .container .row .col3 ul li a i{
+  font-size: 15px;
+  color: var(--dark-brown);
+  margin-left: 10px;
+  
+}
+#footer .footer-top .container .row .col3 ul li a i span{
+  margin-right: 8px;
+  margin-left: 8px;
+  padding: 0;
+
+}
+
+#footer .footer-top .container .row .col4{
+  margin-left:15px;
+}
+
+ #footer .all p{
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #777;
+  background-color: #f8f8f8;
+  width: 100%;
+  margin: 0%;
+}
+
+/*footer end*/
+
+
+
+
+/* الأعمدة داخل الفوتر */
+
